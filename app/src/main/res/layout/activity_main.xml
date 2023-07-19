@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#463E5E"
+    tools:context=".main.view.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/layoutFather"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-52dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="392dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="343dp"
+                app:srcCompat="@drawable/quiz" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"></LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="SELECT A QUIZ:"
+                android:textColor="#FFFFFF"
+                android:textColorHighlight="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textColorLink="#FFFFFF" />
+
+            <Button
+                android:id="@+id/buttonJava"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#8F00F6"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:text="JAVA"
+                android:textColor="#FFFFFF"
+                android:textColorHighlight="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textColorLink="#FFFFFF"
+                app:cornerRadius="20dp" />
+
+            <Button
+                android:id="@+id/buttonAndroid"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#8F00F6"
+                android:text="ANDROID"
+                android:textColor="#FFFFFF"
+                android:textColorHighlight="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textColorLink="#FFFFFF"
+                app:cornerRadius="20dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewAnswers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:text="SEE ANSWERS "
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textColorLink="#FFFFFF" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
